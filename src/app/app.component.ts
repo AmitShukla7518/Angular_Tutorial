@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { FormControl,FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,34 @@ import { FormControl,FormsModule,ReactiveFormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'my-first-project';
+  
+  // @ViewChild('ids', {static: true}) : ElementRef
+ 
+ //14 Des 2022
+ 
+  Userdata:any ={}
+
+  GetData(Data:any){
+
+    console.log(Data);
+    this.Userdata = Data
+    
+  }
+ 
+
+
+  // ---------Referance Type Variable-------------
+
+GetReferance(getData :any){
+  console.warn(getData);
+}
+
+
+check(demo:HTMLInputElement){
+console.warn(demo.value);
+
+}
+
 
 
 }

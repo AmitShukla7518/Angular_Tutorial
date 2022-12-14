@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-// fun1(Name:any,LastName:any){
+fun1(Name:any,LastName:any){
 
-//   alert(Name+" "+LastName)
-// }
+  alert(Name+" "+LastName)
+}
 
 
 // getData(val:any){
@@ -25,7 +25,11 @@ export class LoginComponent {
 //-----Counter -----
 
 // count = 0;
-// counter(type:string){ type==="Add" ?this.count++ :this.count-- }
+// counter(type:string)
+// { 
+//   type==="Add"? this.count++ :this.count--
+
+// }
 
 
 

@@ -1,9 +1,62 @@
-<h1> Hello Angular "{{title}}" </h1>
+<h1 class="heading"> Hello Angular "{{title}}" </h1>
 
-<!-- <app-user-list></app-user-list>
+<!--  <app-user-list></app-user-list>
 <app-students-list></app-students-list>
-<app-teacher-list></app-teacher-list> -->
-<app-login></app-login>
+<app-teacher-list></app-teacher-list> 
+<app-login></app-login>  -->
+ 
+
+<!--  Form  (14 desc 2022)-->
+
+ <!-- 
+ <form #basicForm="ngForm"  (ngSubmit)="GetData(basicForm.value)">
+<input type="text"  #Email ngModel name="Email" placeholder="Enter Email"  > 
+<br/><br/>
+
+<input type="text" ngModel name="UserName" placeholder="UserName"><br/> <br/>
+
+<input type="Password"  ngModel name="Password" placeholder="Enter Your Password"> <br/> <br/>
+
+<br/> <br/>
+<button> Submit</button>
+
+
+</form>
+
+
+
+
+<ul>
+    <li>
+        {{Userdata.Email}}
+    </li>
+    <li>
+        {{Userdata.Password}}
+    </li>
+    <li>
+        {{Userdata.UserName}}
+    </li>
+</ul> 
+
+
+ -->
+
+
+ <br/><br/><br/>
+<!-- <app-favorite></app-favorite> -->
+
+
+<!-- ------Referance Type Variable----- -->
+
+<!--  <input type="text" #Demo   placeholder="Referance type Variable ">
+
+<button (click)="GetReferance(Demo.value)"> Submit</button>
+
+-->
+
+<app-pipes-tut></app-pipes-tut> 
+
+
 
 
 <router-outlet></router-outlet>
