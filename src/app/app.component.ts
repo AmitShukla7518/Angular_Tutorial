@@ -15,21 +15,17 @@ export class AppComponent {
  
   Userdata:any ={}
 
-  GetData(Data:any){
-
+GetData(Data:any){
     console.log(Data);
     this.Userdata = Data
     
   }
  
-
-
   // ---------Referance Type Variable-------------
 
 GetReferance(getData :any){
   console.warn(getData);
 }
-
 
 check(demo:HTMLInputElement){
 console.warn(demo.value);

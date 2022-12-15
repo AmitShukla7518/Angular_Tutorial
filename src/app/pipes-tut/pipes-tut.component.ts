@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-pipes-tut',
   templateUrl: './pipes-tut.component.html',
@@ -8,6 +7,7 @@ import { Component } from '@angular/core';
 export class PipesTutComponent {
 Title= "Intro Of Pipes"
 Today  = Date();
+
 Object={
   "Name":"Amit Shukla",
   "Class":"BCA",

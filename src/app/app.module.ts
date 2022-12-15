@@ -6,12 +6,12 @@ import { UserListComponent } from './user-list/user-list.component';
 import { StudentsListComponent } from './students-list/students-list.component';
 import { TeacherListComponent } from './teacher-list/teacher-list.component';
 import { UserAuthModule } from './user-auth/user-auth.module';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FavoriteComponent } from './favorite/favorite.component';
-import { PipesTutComponent } from './pipes-tut/pipes-tut.component'
-
-
+import { PipesTutComponent } from './pipes-tut/pipes-tut.component';
+import { DirectivesModulesModule } from './directives-modules/directives-modules.module';
+import { ReactiveFormModule } from './reactive-form/reactive-form.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,16 +19,22 @@ import { PipesTutComponent } from './pipes-tut/pipes-tut.component'
     StudentsListComponent,
     TeacherListComponent,
     FavoriteComponent,
-    PipesTutComponent
+    PipesTutComponent,
+    
+    
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     UserAuthModule,
     FormsModule,
-    NgbModule
-    
+    NgbModule,
+    DirectivesModulesModule,
+    ReactiveFormModule
+   
   ],
+ 
   providers: [],
   bootstrap: [AppComponent]
 })
