@@ -1,0 +1,27 @@
+.bi-heart-fill{
+    color: #ccc;
+}
+.highlighted{
+    color: deeppink;
+}
+
+
+
+.zippy{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 50%;
+    
+}
+.zippy-heading{
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+}
+.zippy-body{
+    padding: 20px;
+
+}
+.expended{
+    background:#f0f0f0;
+}

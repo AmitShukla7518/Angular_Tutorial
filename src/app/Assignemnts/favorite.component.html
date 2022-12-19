@@ -1,0 +1,43 @@
+<!--Assignment 2-->
+<h2>{{Title}}</h2> 
+
+<!--One Way (Start fill-In and Fill-Out) -->
+<span class ="bi" [class.bi-star]="isfavorite"class="bi" [class.bi-star-fill]="!isfavorite" (click)="onclick()"></span> <br/><br/>
+ 
+
+<br/><br/>
+
+
+
+<!--Assignment 3 (Case Formating)-->
+<input type="text"  #Email ngModel name="Email" placeholder="Enter Email" (input)="showDataFun(Email.value)" > <br/> 
+<H4> {{ShowData}}</H4>
+
+
+
+<!-- <input type="text" [(ngModel)]="Name" (input)="onchange()"> -->
+
+<!-- <h3>{{Name}}</h3> -->
+
+
+
+<!--Assignment 4 Like Counts of Hearts-->
+
+<br><br><br/>
+<i class="bi bi-heart-fill" [class.highlighted] = "isActive" (click)="Onclick()"></i>
+<span>{{CountLike}}</span>
+
+
+
+
+<!--Assignment 5 (Zippy Components )-->
+<br><br><br>
+<div class="zippy">
+    <div class="zippy-heading" [class.expended] ="isexpended" (click)="onclick2()">{{title}}</div>
+    <div *ngIf="isexpended" class="zippy-body">
+        <ng-content></ng-content>
+    </div>
+</div>
+
+
+<!--Next  Assignment in Reactive Components -->

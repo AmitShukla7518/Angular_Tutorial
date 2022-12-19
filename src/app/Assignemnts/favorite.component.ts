@@ -1,16 +1,14 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
-  selector: 'app-favorite',
+  selector: 'app-Assignemnt',
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css']
 })
 export class FavoriteComponent {
   Title = "Assignment 2 And 3"
-
-
 
   // ----2---
   isfavorite: boolean = false;
@@ -30,12 +28,21 @@ export class FavoriteComponent {
     return this.ShowData = Data.join(' ')
   }
 
+  @Input('CountLike') CountLike: number = 0;
+  @Input('isActive') isActive: boolean = true;
 
 
 
 
+  Onclick() {
+    this.CountLike += (this.isActive) ? -1 : 1;
+    this.isActive = !this.isActive;
+  }
 
-
-
+  @Input('title') title: string = '';
+  isexpended: boolean =false;
+  onclick2() {
+    this.isexpended =! this.isexpended
+  }
 
 }

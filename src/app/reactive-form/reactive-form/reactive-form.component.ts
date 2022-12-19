@@ -19,8 +19,6 @@ export class ReactiveFormComponent {
 
   Password1 = this.UserForm.value.Password
   password2 = this.UserForm.value.CnfrmPassword
-
-  // touched: any;
   save() {
     console.warn(this.UserForm.value);
   }

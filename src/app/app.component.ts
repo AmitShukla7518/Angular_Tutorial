@@ -34,4 +34,12 @@ console.warn(demo.value);
 
 
 
+
+//Assignment 4 For Send Data in Parants to Child Component
+tweet ={
+  body:'..',
+  CountLike:10,
+  isActive:false
+}
+
 }
